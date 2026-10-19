@@ -2496,7 +2496,8 @@
         "experimental features": "Experimental Features",
         "settings": "Settings",
         "blitzRestore": "Blitz Restore",
-        "point-of-sale": "Point-of-sale"
+        "point-of-sale": "Point-of-sale",
+        "hardware wallet psbt": "Hardware wallet PSBT"
       },
       "walletLeaves": {
         "sats": "sats",
@@ -3377,5 +3378,33 @@
       "willExceedBudgetWarning": "Sending this payment will put you over your monthly spending limit",
       "budgetWarningHeadsUp": "Heads up"
     }
+  },
+  "hardwareWalletPsbt": {
+    "warning": "Only use your own native SegWit (P2WPKH) UTXOs. Check every supplied prevout with a trusted source and verify every detail on your hardware device before signing. This does not apply to Lightning or Spark balances.",
+    "intro": "Prepare an unsigned transaction from public transaction data only. Enter JSON manually; there is no automatic coin selection or funding.",
+    "jsonLabel": "Public transaction JSON",
+    "sampleNote": "Placeholder example only; not real funds. Replace every placeholder with verified public data.",
+    "ownership": "I own and control every input UTXO listed above.",
+    "ownershipRequired": "Confirm that you own every input before preparing.",
+    "invalidJson": "Enter valid transaction JSON.",
+    "prepare": "Prepare unsigned PSBT",
+    "preparing": "Preparing…",
+    "prepareFailed": "Could not prepare this unsigned PSBT. Check the public transaction data and try again.",
+    "copyFailed": "Could not copy the PSBT. You can select and copy it manually.",
+    "summaryTitle": "Review transaction details",
+    "network": "Network",
+    "inputCount": "Input count",
+    "inputSats": "Total input value",
+    "recipient": "Recipient address",
+    "amount": "Recipient amount",
+    "changeAddress": "Change address",
+    "changeSats": "Change amount",
+    "fee": "Fee",
+    "verifyWarning": "Review the exact network, inputs, recipient, amounts, change and fee. Verify them on the hardware device. This screen does not sign or broadcast.",
+    "review": "I have reviewed the full summary and explicitly authorize revealing the unsigned PSBT below.",
+    "unsignedPsbt": "Unsigned PSBT (base64)",
+    "copy": "Copy unsigned PSBT",
+    "input": "Input",
+    "noChange": "None (no change output)"
   }
 }

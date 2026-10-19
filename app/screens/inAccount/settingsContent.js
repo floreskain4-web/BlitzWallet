@@ -30,6 +30,7 @@ import ExploreUsers from './explorePage';
 import NostrHome from '../../components/admin/homeComponents/settingsContent/nostrHome';
 import { useTranslation } from 'react-i18next';
 import ChooseLangugae from '../../components/admin/homeComponents/settingsContent/langugae';
+import PrepareHardwareWalletPsbt from './prepareHardwareWalletPsbt';
 
 export default function SettingsContentIndex(props) {
   const navigate = useNavigation();
@@ -118,6 +119,10 @@ export default function SettingsContentIndex(props) {
               {selectedPage?.toLowerCase() === 'nostr' && (
                 <NostrHome theme={theme} />
               )}
+              {selectedPage?.toLowerCase() === 'hardware wallet psbt' && (
+                <PrepareHardwareWalletPsbt />
+              )}
+
               {selectedPage?.toLowerCase() === 'login mode' && (
                 <LoginSecurity extraData={extraData} theme={theme} />
               )}

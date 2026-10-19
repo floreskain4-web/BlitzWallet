@@ -61,6 +61,11 @@ const SECURITY_ROWS = [
     displayName: 'screens.inAccount.settingsContent.backup wallet',
     iconName: 'Lock',
   },
+  {
+    name: 'Hardware wallet PSBT',
+    displayName: 'screens.inAccount.settingsContent.hardware wallet psbt',
+    iconName: 'ShieldCheck',
+  },
 ];
 
 const TECHNICAL_ROWS = [
