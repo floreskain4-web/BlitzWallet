@@ -95,3 +95,8 @@ The repo's `CLAUDE.md` defines binding working rules for AI agents — in short:
 
 - CI: single GitHub Actions workflow `.github/workflows/ci.yml` on macOS, Node 20 + Corepack, `yarn install` (with retry) then `yarn lint` — that is the entire gate
 - Releases: tagged per platform on GitHub; Android release artifacts built via the `apkBuild`/`playstoreBuild` scripts above; `docs/plans/` and `docs/superpowers/` hold past design docs useful for context on chart/analytics and transaction-filtering work
+
+
+## Portable Agent Skills and Wallet Safety
+
+Portable skills live in `.claude/skills/<name>/SKILL.md` and are also intended for Copilot discovery. Read the relevant skill before matching work: `react-native-android`, `bitcoin-unsigned-psbt`, or `external-knowledge-research`. These are guidance only, not runtime enforcement. For all agent work, never request, import, generate, expose, or store seeds/private keys; never sign, finalize, broadcast, or touch real funds. Transaction preparation, if explicitly requested, is limited to an unsigned PSBT built only from user-provided public data and synthetic fixtures; the user independently reviews/signs on their hardware wallet and broadcasts themselves. Existing wallet flows are not authorization to execute them.
