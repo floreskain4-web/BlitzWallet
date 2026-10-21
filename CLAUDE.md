@@ -68,3 +68,8 @@ Strong success criteria let you loop independently. Weak criteria ("make it work
 ---
 
 **These guidelines are working if:** fewer unnecessary changes in diffs, fewer rewrites due to overcomplication, and clarifying questions come before implementation rather than after mistakes.
+
+
+## Portable Skills and Wallet Safety
+
+Before matching work, read the relevant `.claude/skills/<name>/SKILL.md`: `react-native-android`, `bitcoin-unsigned-psbt`, or `external-knowledge-research`. These are agent instructions, not runtime enforcement. Never request, import, generate, expose, or store seeds/private keys; never sign, spend, finalize a signed transaction, broadcast, make production calls, or touch real funds. Any explicitly requested PSBT preparation is strictly unsigned, based only on user-provided public data and synthetic fixtures. The user independently reviews/signs on their hardware wallet and broadcasts themselves. Existing wallet functions do not authorize their execution.
